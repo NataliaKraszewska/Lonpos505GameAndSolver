@@ -1,0 +1,10 @@
+C:\Users\natkr\source\repos\Lopos\Lopos505GameAndSolver\Lonpos505GameSolver\Lonpos505GameSolver\bin\Debug\Lonpos505GameSolver.exe.config
+C:\Users\natkr\source\repos\Lopos\Lopos505GameAndSolver\Lonpos505GameSolver\Lonpos505GameSolver\bin\Debug\Lonpos505GameSolver.exe
+C:\Users\natkr\source\repos\Lopos\Lopos505GameAndSolver\Lonpos505GameSolver\Lonpos505GameSolver\bin\Debug\Lonpos505GameSolver.pdb
+C:\Users\natkr\source\repos\Lopos\Lopos505GameAndSolver\Lonpos505GameSolver\Lonpos505GameSolver\obj\Debug\Lonpos505GameSolver.csprojAssemblyReference.cache
+C:\Users\natkr\source\repos\Lopos\Lopos505GameAndSolver\Lonpos505GameSolver\Lonpos505GameSolver\obj\Debug\Lonpos505GameSolver.MainForm.resources
+C:\Users\natkr\source\repos\Lopos\Lopos505GameAndSolver\Lonpos505GameSolver\Lonpos505GameSolver\obj\Debug\Lonpos505GameSolver.Properties.Resources.resources
+C:\Users\natkr\source\repos\Lopos\Lopos505GameAndSolver\Lonpos505GameSolver\Lonpos505GameSolver\obj\Debug\Lonpos505GameSolver.csproj.GenerateResource.cache
+C:\Users\natkr\source\repos\Lopos\Lopos505GameAndSolver\Lonpos505GameSolver\Lonpos505GameSolver\obj\Debug\Lonpos505GameSolver.csproj.CoreCompileInputs.cache
+C:\Users\natkr\source\repos\Lopos\Lopos505GameAndSolver\Lonpos505GameSolver\Lonpos505GameSolver\obj\Debug\Lonpos505GameSolver.exe
+C:\Users\natkr\source\repos\Lopos\Lopos505GameAndSolver\Lonpos505GameSolver\Lonpos505GameSolver\obj\Debug\Lonpos505GameSolver.pdb
