@@ -91,6 +91,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.movablePictureBox1 = new Lonpos505GameSolver.MovablePictureBox(this.components);
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -869,6 +870,11 @@
             this.panel3.Size = new System.Drawing.Size(200, 96);
             this.panel3.TabIndex = 0;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // movablePictureBox1
             // 
             this.movablePictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -890,6 +896,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "MainForm";
             this.Text = "LOPOS 505 GAME AND SOLVER";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
@@ -1017,6 +1024,7 @@
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.PictureBox pictureBox16;
         private MovablePictureBox movablePictureBox1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

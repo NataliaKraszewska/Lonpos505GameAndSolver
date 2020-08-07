@@ -16,7 +16,7 @@ namespace Lonpos505GameSolver
             container.Add(this);
         }
 
-        Point point;
+        public Point point;
 
         protected override void OnMouseDown(MouseEventArgs e)
         {
