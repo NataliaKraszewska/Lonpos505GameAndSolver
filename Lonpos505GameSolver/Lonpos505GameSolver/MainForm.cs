@@ -7,59 +7,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Timer = System.Timers.Timer;
 
 namespace Lonpos505GameSolver
 {
     public partial class MainForm : Form
     {
-        private static Timer loopTimer;
-        private Button formButton;
 
+        List<PictureBox> boardPictureList = new List<PictureBox>();       
         public MainForm()
         {
             InitializeComponent();
-            //Console.WriteLine(movablePictureBox1.point);
 
-            //loop timer
-            loopTimer = new Timer();
-            loopTimer.Interval = 500;
-            loopTimer.Enabled = false;
-            loopTimer.Elapsed += loopTimerEvent;
-            loopTimer.AutoReset = true;
-            //form button
-            this.MouseDown += mouseDownEvent;
-            this.MouseUp += mouseUpEvent;
-        }
-        private  void loopTimerEvent(Object source, System.Timers.ElapsedEventArgs e)
-        {
-            if (pictureBox56.Bounds.IntersectsWith(movablePictureBox1.Bounds) && movablePictureBox1.Visible)
+            for( int i = 1; i < 56; i++)
             {
-                pictureBox56.Image = movablePictureBox1.Image;
-                movablePictureBox1.Hide();
+                boardPictureList.Add((PictureBox)Controls.Find("pictureBox" + i, true)[0]);
+                
             }
         }
-        private static void mouseDownEvent(object sender, MouseEventArgs e)
-        {
-            loopTimer.Enabled = true;
-        }
-        private static void mouseUpEvent(object sender, MouseEventArgs e)
-        {
-            loopTimer.Enabled = false;
-        }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (pictureBox56.Bounds.IntersectsWith(movablePictureBox1.Bounds) && movablePictureBox1.Visible) 
-            {
-                pictureBox56.Image = movablePictureBox1.Image;
-                movablePictureBox1.Hide();
-            }
-        }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
             timer1.Start();
+        }
+
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            for(int i = 0; i< boardPictureList.Count(); i++)
+            {
+                if (boardPictureList[i].Bounds.IntersectsWith(movablePictureBox1.Bounds) && movablePictureBox1.Visible && Control.MouseButtons != MouseButtons.Left)
+                {
+                    boardPictureList[i].Image = movablePictureBox1.Image;
+                    movablePictureBox1.Hide();
+                }
+
+            }
         }
     }
 }

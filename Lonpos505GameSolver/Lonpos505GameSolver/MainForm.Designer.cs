@@ -86,13 +86,13 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox56 = new System.Windows.Forms.PictureBox();
+            this.pictureBox55 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.movablePictureBox1 = new Lonpos505GameSolver.MovablePictureBox(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
@@ -149,7 +149,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.movablePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -220,7 +220,7 @@
             this.groupBox1.Controls.Add(this.pictureBox3);
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.pictureBox56);
+            this.groupBox1.Controls.Add(this.pictureBox55);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
@@ -822,16 +822,16 @@
             this.pictureBox1.TabIndex = 57;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox56
+            // pictureBox55
             // 
-            this.pictureBox56.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox56.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox56.Image")));
-            this.pictureBox56.Location = new System.Drawing.Point(0, 12);
-            this.pictureBox56.Name = "pictureBox56";
-            this.pictureBox56.Size = new System.Drawing.Size(57, 51);
-            this.pictureBox56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox56.TabIndex = 56;
-            this.pictureBox56.TabStop = false;
+            this.pictureBox55.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox55.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox55.Image")));
+            this.pictureBox55.Location = new System.Drawing.Point(0, 12);
+            this.pictureBox55.Name = "pictureBox55";
+            this.pictureBox55.Size = new System.Drawing.Size(57, 51);
+            this.pictureBox55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox55.TabIndex = 56;
+            this.pictureBox55.TabStop = false;
             // 
             // panel2
             // 
@@ -870,11 +870,6 @@
             this.panel3.Size = new System.Drawing.Size(200, 96);
             this.panel3.TabIndex = 0;
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 10;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // movablePictureBox1
             // 
             this.movablePictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -886,6 +881,10 @@
             this.movablePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.movablePictureBox1.TabIndex = 2;
             this.movablePictureBox1.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // MainForm
             // 
@@ -953,7 +952,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.movablePictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -968,7 +967,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.PictureBox pictureBox56;
+        private System.Windows.Forms.PictureBox pictureBox55;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
