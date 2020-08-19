@@ -12,17 +12,15 @@ namespace Lonpos505GameSolver
 {
     public partial class MainForm : Form
     {
+        List<PictureBox> boardPictureList = new List<PictureBox>();      
+        
 
-        List<PictureBox> boardPictureList = new List<PictureBox>();       
         public MainForm()
         {
             InitializeComponent();
 
-            for( int i = 1; i < 56; i++)
-            {
+            for(int i = 1; i < 56; i++)
                 boardPictureList.Add((PictureBox)Controls.Find("pictureBox" + i, true)[0]);
-                
-            }
         }
 
 
@@ -36,10 +34,9 @@ namespace Lonpos505GameSolver
         {
             for(int i = 0; i< boardPictureList.Count(); i++)
             {
-                if (boardPictureList[i].Bounds.IntersectsWith(movablePictureBox1.Bounds) && movablePictureBox1.Visible && Control.MouseButtons != MouseButtons.Left)
+                if(boardPictureList[i].Bounds.IntersectsWith(movablePictureBox1.Bounds) && movablePictureBox1.Visible && Control.MouseButtons != MouseButtons.Left)
                 {
-                    boardPictureList[i].Image = movablePictureBox1.Image;
-                    movablePictureBox1.Hide();
+                    movablePictureBox1.Bounds = boardPictureList[i].Bounds;
                 }
 
             }

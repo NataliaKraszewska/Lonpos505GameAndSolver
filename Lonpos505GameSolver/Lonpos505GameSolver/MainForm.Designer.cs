@@ -894,7 +894,7 @@
             this.Controls.Add(this.movablePictureBox1);
             this.Controls.Add(this.panel1);
             this.Name = "MainForm";
-            this.Text = "LOPOS 505 GAME AND SOLVER";
+            this.Text = "LONPOS 505 GAME AND SOLVER";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
